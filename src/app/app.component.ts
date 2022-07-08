@@ -15,8 +15,8 @@ export class AppComponent implements OnInit {
     this.selectedModal = true;
   }
 
-  logIn() {
-    this.selectedModal = true
-  }
+  // logIn() {
+  //   this.selectedModal = true
+  // }
 
 }

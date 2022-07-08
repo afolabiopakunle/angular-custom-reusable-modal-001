@@ -1,7 +1,7 @@
 <div *ngIf="show" class="my-modal">
   <header class="header">
     <h2>{{ title }}</h2>
-    <button class="close-btn">x</button>
+    <button (click)="closeClicked()" class="close-btn">x</button>
   </header>
   <div class="my-modal-body">
     <ng-content></ng-content>

@@ -1,4 +1,4 @@
-import { Component, VERSION } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
@@ -7,6 +7,13 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent  {
 
-  showSelectedModal: null;
+  selectedModal!: string;
   
+  signUp() {
+    this.selectedModal = 'signup';
+  }
+
+  logIn() {
+    this.selectedModal = 'login'
+  }
 }

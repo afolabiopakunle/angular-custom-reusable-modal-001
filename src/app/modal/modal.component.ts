@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ModalComponent implements OnInit {
 
-  @Input() show: boolean;
+  @Input() show: boolean = true;
   @Input() title: string;
   
   constructor() { }

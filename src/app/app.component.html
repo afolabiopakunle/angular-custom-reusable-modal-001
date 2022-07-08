@@ -1,5 +1,12 @@
 <p>
   Start editing to see some magic happen :)
 </p>
+<button (click)="signUp()" class="btn btn-primary">Sign up</button>
 
-<app-modal [show]="showSelectedModal=== 'signup'" title='Sign up'></app-modal>
+<app-modal [show]="selectedModal=== 'signup'" title='Sign up'>
+  <div><p>Modal Sign up</p></div>
+</app-modal>
+
+<app-modal [show]="selectedModal=== 'login'" title="Log in">
+  <div><p>Modal Login</p></div>
+</app-modal>

@@ -7,16 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
-  selectedModal!: boolean;
+  signUpModal!: boolean;
+  loginModal!: boolean;
+
   ngOnInit() {
-    console.log(this.selectedModal)
-  }
-  signUp() {
-    this.selectedModal = true;
   }
 
-  // logIn() {
-  //   this.selectedModal = true
-  // }
+  signUp() {
+    this.loginModal = false;
+    this.signUpModal = true;
+  }
+
+  logIn() {
+    this.signUpModal = false;
+    this.loginModal = true;
+  }
 
 }

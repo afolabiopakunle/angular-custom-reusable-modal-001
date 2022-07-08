@@ -1,10 +1,9 @@
-<div class="modal">
+<div *ngIf="show" class="my-modal">
   <header class="header">
-    <h2>Title</h2>
-    <!-- <h2>{{ title }}</h2> -->
+    <h2>{{ title }}</h2>
     <button class="close-btn">x</button>
   </header>
-  <div class="modal-body">
+  <div class="my-modal-body">
     <!-- <ng-content></ng-content> -->
     <p>Hello world</p>
   </div>

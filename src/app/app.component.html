@@ -1,12 +1,11 @@
-<p>
-  Start editing to see some magic happen :)
-</p>
-<button (click)="signUp()" class="btn btn-primary">Sign up</button>
 
-<app-modal>
+<button (click)="signUp()" class="btn btn-primary">Sign up</button>
+<button (click)="logIn()" class="btn btn-warning">Login</button>
+
+<app-modal [show]="selectedModal==='signup'" title="Sign up">
   <div><p>Modal Sign up</p></div>
 </app-modal>
 
-<!-- <app-modal [show]="selectedModal=== 'login'" title="Log in">
+<app-modal [show]="selectedModal=== 'login'" title="Log in">
   <div><p>Modal Login</p></div>
-</app-modal> -->
+</app-modal>
